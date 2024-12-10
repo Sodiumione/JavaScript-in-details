@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>The JavaScript String() Method</h2>
+    <p id="number_result"></p>
+    <p id="string_result"></p>
+    <p id="search_result"></p>
+    <p id="replace_result"></p>
+    <script>
+      var x = 70;
+      var y = 90;
+      document.getElementById("number_result").innerHTML = x + y;
+      document.getElementById("string_result").innerHTML =
+        String(x) + String(y);
+      var str = "Hai hello how are doing for the day";
+      var txt = str.replace("Hai hello how are", "Hi Hello how are you");
+      document.getElementById("replace_result").innerHTML = txt;
+      var search_position = txt.search("doing");
+      document.getElementById("search_result").innerHTML = search_position;
+    </script>
+  </body>
+</html>
